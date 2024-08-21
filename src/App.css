@@ -1,3 +1,52 @@
+body {
+  background-color: #282c34;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.Parent-Header{
+  text-align: center;
+  color: rgb(165, 247, 13);
+}
+
+p {
+  color: #e6d70b;
+}
+
+.ChildBtn {
+  border: 1px #e6870b;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #e6870b;
+  color: white;
+}
+
+.ChildBtn:hover {
+  background-color: #4e5970;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  width: 800px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
 .App {
   text-align: center;
 }
