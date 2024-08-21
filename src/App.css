@@ -63,7 +63,8 @@ img {
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #375053; */
+  background: rgba(255, 255, 255, 0.8);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -71,14 +72,23 @@ img {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
 }
 
 .Registration {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 50px;
+  background-image: url('https://image.tensorartassets.com/posts/images/647390625641086951/95a16acc-5186-4212-9dc2-9ec8e9754379.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
 
 .Registration form {
   width: 100%;
@@ -93,18 +103,21 @@ img {
 .registration-form label {
   display: block;
   margin-bottom: 5px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-input[type='text'],
-input[type='password'] {
+input, textarea, select {
     width: 100%;
-    padding: 15px;
+    padding: 12px;
     border: 1px solid rgb(0, 255, 149);
     border-radius: 4px;
     box-sizing: border-box;
 }
 
+textarea {
+  resize: vertical; /* Allows vertical resizing only */
+}
 
 .Registration button {
   margin-top: 20px;
