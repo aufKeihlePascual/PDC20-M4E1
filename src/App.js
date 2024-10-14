@@ -1,17 +1,16 @@
+import React from 'react';
 import './App.css';
-import Parent from './Parent';
-import MOD1Registration from './MOD1Registration';
-
-
-//import the .js file then call it using the "<.js/>" ie. <HelloWorld/>
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LogAdmin from './Dashboard/LogAdmin';
 
 function App() {
   return (
-    <div>
-      <MOD1Registration/>
-      <Parent/>
-    </div>
-    
+    <Router>
+      <Routes>
+        <Route path="/" element={<LogAdmin />} />
+      </Routes>
+    </Router>
+
   );
 }
 
